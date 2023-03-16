@@ -7,7 +7,7 @@ $(document).ready(function() {
       if ($toggleSwitch.is(':checked')) {
 
         $home.css({
-            backgroundColor: '#1a1a1a',
+            backgroundColor: '#011937',
             color: 'white'
           })
   
@@ -20,4 +20,8 @@ $(document).ready(function() {
   
       }
     });
+  });
+
+  $(".js-scroll-trigger").click(function(){
+    $(".menu-btn").click();
   });
