@@ -1,341 +1,331 @@
 .body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5rem;
 }
-
 
 .navbar-toggler {
-    color: rgba(255, 255, 255, 0.755);
-    border: 1px;
-  }
-  
-  a.nav-link {
-    color: white;
-    font-size: 1.2rem;
-    font-family: sans-serif;
-    margin: 0 5px;
-  
-  }
-  
-  a.nav-link:hover {
-    color: yellow;
-  }
-  
-  a.nav-link::after {
-    content: "";
-    display: block;
-    border-bottom: 0.1rem solid white;
-    transform: scaleX(0);
-    transition: 0.1s linear;
-  }
-  
-  a.nav-link:hover::after {
-    transform: scaleX(0.5);
-  }
-  
-  .logo {
-    font-size: 2rem;
-    font-family: "Pacifico",cursive;
-    letter-spacing: 5px;
-    color: white;
-  }
-  
-  .logo > span {
-    color: yellow;
-  }
-  
-  nav{
-    display: flex;
-    height: 65px;
-    width: 100%;
-    background: #f4f4f4;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 0 50px;
-    flex-wrap: wrap;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  nav .logo{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-  }
-  nav ul{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    height: 10px;
-  }
-  nav ul li{
-    margin: 0 5px;
-  }
-  nav ul li a{
-    color: #111111;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-  }
-  nav ul li a.active,
-  nav ul li a:hover{
-    color: #f8ca23;
-  }
-  nav .menu-btn i{
-    color: #161616;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
-  }
-  input[type="checkbox"]{
-    display: none;
-  }
-
-
-  /* SWITCH */
-
-  .label {
-    width: 50px;
-    height: 26px;
-    background-color:rgb(158, 158, 158);
-    display: flex;
-    border-radius: 50px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    transform: scale(1.5);
-    margin-left: 25rem;
-    cursor: pointer;
-  }
-  
-  .ball {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
- 
-  }
-  
-  .checkbox:checked + .label {
-  background-color: black;
-  }
-  
-  .checkbox:checked + .ball {
-  background-color: white;
-  }
-  
-  /*  target the elemenent after the label*/
-  .checkbox:checked + .label .ball{
-    transform: translateX(24px);
-  }
-  
-  .fa-moon {
-    color: #f8ca23;
-  }
-  
-  .fa-sun {
-    color: #f8ca23;
-  }
-  
-
-  #home {
-    height: 100vh;
+  color: rgba(255, 255, 255, 0.755);
+  border: 1px;
 }
 
+a.nav-link {
+  color: white;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  margin: 0 5px;
+}
+
+a.nav-link:hover {
+  color: yellow;
+}
+
+a.nav-link::after {
+  content: "";
+  display: block;
+  border-bottom: 0.1rem solid white;
+  transform: scaleX(0);
+  transition: 0.1s linear;
+}
+
+a.nav-link:hover::after {
+  transform: scaleX(0.5);
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.logo > span {
+  color: yellow;
+}
+
+nav {
+  display: flex;
+  height: 65px;
+  width: 100%;
+  background: #f4f4f4;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  flex-wrap: wrap;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  height: 10px;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #111111;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #f8ca23;
+}
+
+nav .menu-btn i {
+  color: #161616;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* SWITCH */
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color: rgb(158, 158, 158);
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+  margin-left: 25rem;
+  cursor: pointer;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label {
+  background-color: black;
+}
+
+.checkbox:checked + .ball {
+  background-color: white;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f8ca23;
+}
+
+.fa-sun {
+  color: #f8ca23;
+}
+
+#home {
+  height: 100vh;
+}
+
+/* HOME */
+
+#home {
+  padding-top: 3rem;
+}
+
+.triple-box {
+  position: relative;
+  margin-left: 20rem;
+}
+
+.tri-box {
+  position: absolute;
+  margin-top: -5rem;
+  margin-left: -5rem;
+}
+
+.header-pict {
+  width: 90%;
+}
+
+.hello {
+  font-size: 2.5rem;
+}
+
+.header-capt {
+  width: 75%;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1366px) {
   /* HOME */
-
-  .box {
-    position: relative;
- 
-  }
-
-  .yellow-box {
-    position: absolute;
-    width: 40%;
-    margin-bottom: -20rem;
-    margin-left: -17rem;
-
+  .label {
+    margin-left: 20rem;
   }
 
   .triple-box {
-    position: relative;
+    margin-left: 18rem;
   }
 
-  .green-box {
-    position: relative;
+  .header-capt {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .label {
+    margin-left: 12rem;
   }
 
-  .tri-box {
-    position: absolute;
-    margin-top: -5rem;
-    margin-left: -5rem;
+  .triple-box {
+    margin-left: 18rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .label {
+    margin: auto;
   }
 
-
-
- 
-
-  .box-green {
-    position: absolute;
-    width: 30%;
-    margin-left: 23.8rem;
+  nav .menu-btn i {
+    display: block;
   }
 
-  .header {
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav ul {
+    position: fixed;
+    top: 63px;
+    left: -100%;
+    background: #f4f4f4;
+    height: 100vh;
     width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked ~ ul {
+    left: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: yellow;
+    transition: 0.3s;
+  }
+
+  /* HOME */
+
+  #home {
+    padding-top: 1rem;
+  }
+
+  .triple-box {
+    margin-left: 18rem;
+  }
+
+  .header-pict {
+    width: 60%;
+  }
+
+  .row > .header-img {
+    order: -1;
   }
 
   .hello {
-    font-size: 2.5rem;
-  }
-
-  .header-text {
-    width: 75%;
-  }
-
-  .label {
-    width: 50px;
-    height: 26px;
-    background-color:rgb(96, 96, 96);
-    display: flex;
-    border-radius:50px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    transform: scale(1.5);
-    margin-left: 25rem;
-    cursor: pointer;
-
-  }
-  
-  .ball {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
-  }
-  
-  .checkbox:checked + .label {
-  background-color: black;
-  }
-  
-  .checkbox:checked + .ball {
-  background-color: white;
-  }
-  
-  /*  target the elemenent after the label*/
-  .checkbox:checked + .label .ball{
-    transform: translateX(24px);
-  }
-  
-  .fa-moon {
-    color: #f8ca23;
-  }
-  
-  .fa-sun {
-    color: #f8ca23;
-  }
-
-  #home {
     padding-top: 3rem;
   }
 
-
-  @media (max-width: 1366px) {
-    .toggle-switch {
-        margin-left: 15rem;
-      }
-
-    
+  .header-capt {
+    width: 100%;
   }
-  @media (max-width: 1000px) {
-    .toggle-switch {
-      margin-left: 10rem;
-    }
+}
+
+@media (max-width: 600px) {
+
+/* HOME */
+  #home {
+    padding-top: 0;
   }
-  @media (max-width: 900px) {
-   .label {
-        margin: auto;
-    }
 
-      nav .menu-btn i{
-        display: block;
-      }
-      #click:checked ~ .menu-btn i:before{
-        content: "\f00d";
-      }
-      nav ul{
-        position: fixed;
-        top: 63px;
-        left: -100%;
-        background: #f4f4f4;
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-   
-      }
-      #click:checked ~ ul{
-        left: 0;
-      }
-      nav ul li{
-        width: 100%;
-        margin: 40px 0;
-      }
-      nav ul li a{
-        width: 100%;
-        margin-left: -100%;
-        display: block;
-        font-size: 20px;
-        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      }
-      #click:checked ~ ul li a{
-        margin-left: 0px;
-      }
-      nav ul li a.active,
-      nav ul li a:hover{
-        background: none;
-        color: yellow;
-        transition: 0.3s;
-      }
+  .triple-box {
+    margin-left: 15rem;
   }
-  @media (max-width: 600px) {
- 
 
-    .hello {
-      margin-top: 2rem;
-      font-size: 1.5rem;
-    }
-
-    .header {
-      width: 70%;
-    }
-
-    .row > .img-header {
-      order: -1;
-    }
-
-    .header-text {
-      width: 95%;
-    }
-
+  .hello {
+    margin-top: 2rem;
+    font-size: 1.5rem;
   }
-  @media (max-width: 325px) {
 
+  .header-pict {
+    width: 70%;
   }
+
+  .row > .header-img {
+    order: -1;
+  }
+
+  .header-capt {
+    width: 95%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 325px) {
+
+  .hello {
+    margin-top: 0;
+  }
+
+  .tri-box {
+    width: 100%;
+  }
+}
